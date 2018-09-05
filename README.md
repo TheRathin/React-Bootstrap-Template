@@ -9,9 +9,9 @@ A starter template for app, includes:
  
  Direcory Structure of src folder:
   
-  -- src
-    - components
-    - pages
-    - styles
+  -- src <br/>
+   &nbsp; - components <br/>
+   &nbsp; - pages <br/>
+   &nbsp; - styles
     
  The methodology that I follow up here is that one or more page has some resuable components and you can either include the style in the component file or put in styles folder by referring with the component name.
