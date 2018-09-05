@@ -7,3 +7,11 @@ A starter template for app, includes:
  3. Reactstrap + Bootstrap
  4. React Router
  
+ Direcory Structure of src folder:
+  
+  -- src
+    - components
+    - pages
+    - styles
+    
+ The methodology that I follow up here is that one or more page has some resuable components and you can either include the style in the component file or put in styles folder by referring with the component name.
