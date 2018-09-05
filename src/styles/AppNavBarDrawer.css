@@ -1,0 +1,28 @@
+
+    .drawer {
+        position: relative;
+    }
+
+    .drawerHeader {
+        display: flex;
+        align-items: center;
+        justify-Content: flex-end;
+        padding: 0 8px;
+    }
+
+    /* CSS common for everyone*/
+
+    .root {
+        background-color: #454969;
+        text-align: center;
+        padding: 20px;
+        line-height: 1.3;
+        box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.2);
+        margin-bottom: 10px;
+    }
+
+    .divider {
+        border: 0.5px solid white;
+        border-color: #CCCCE6;
+        margin-bottom: 0px;
+    }
