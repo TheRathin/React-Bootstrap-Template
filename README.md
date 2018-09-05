@@ -15,3 +15,10 @@ A starter template for app, includes:
    &nbsp; - styles
     
  The methodology that I follow up here is that one or more page has some resuable components and you can either include the style in the component file or put in styles folder by referring with the component name.
+ 
+ 
+<h3> Home Page [A sample] </h3>
+<img src="./img/sc-1.png" />
+
+<h3> Drawer </h3>
+<img src="./img/sc-2.png" />
