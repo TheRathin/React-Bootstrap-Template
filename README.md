@@ -17,6 +17,8 @@ This starter template includes:
     
  The methodology that I follow up here is that one or more page has some resuable components and you can either include the style in the component file or put in styles folder by referring with the component name.
  
+<strong>Please feel free to contribute! Thank you</strong>
+ 
  
 <h3> Home Page [A sample] </h3>
 <img src="./img/sc-1.png" />
