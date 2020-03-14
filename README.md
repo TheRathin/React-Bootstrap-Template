@@ -8,7 +8,7 @@ This starter template includes:
  4. React Router
  5. A page + drawer
  
- Direcory Structure of src folder:
+ Directory Structure of src folder:
   
   -- src <br/>
    &nbsp; - components <br/>
