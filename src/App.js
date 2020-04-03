@@ -1,11 +1,7 @@
 //import modules
 import React, { Component } from 'react';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
-import { BrowserRouter as Router,Route } from 'react-router-dom';
-//import comoponent
-import AppNavBar from './components/AppNavBar';
-//import pages
-import Home from './pages/Home';
+import NavLinks from './components/NavLinks';
 
 //A small piece of code to customize your theme
 const theme = createMuiTheme({
@@ -26,10 +22,7 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider theme={theme}>
-        <AppNavBar/>
-        <Router>
-          <Route exact path="/" component={Home} />
-        </Router>
+        <NavLinks/>
       </MuiThemeProvider>
     );
   }
