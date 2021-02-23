@@ -7,13 +7,13 @@ const styles = {
   },
 };
 
-const Graph = () => {
+const Dashboard = () => {
   return (
     <div style={styles.root}>
       <Container>
         <Row>
           <Col md={12}>
-            <h1>Graph Page</h1>
+            <h1>Dashboard</h1>
           </Col>
         </Row>
       </Container>
@@ -21,4 +21,4 @@ const Graph = () => {
   );
 };
 
-export default Graph;
+export default Dashboard;
