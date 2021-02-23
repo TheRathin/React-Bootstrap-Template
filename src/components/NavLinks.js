@@ -1,19 +1,21 @@
-import React from 'react';
-import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //import component
-import AppNavBar from './AppNavBar';
+import AppNavBar from "./AppNavBar";
 //import pages
-import Home from '../pages/Home';
-import Graph from '../pages/Graph';
+import Dashboard from "../pages/Dashboard";
+import Graph from "../pages/Graph";
 
-export default function AppNavLinks () {
-    return (
-        <Router>
-            <AppNavBar/>
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/graph" component={Graph} />
-            </Switch>
-        </Router>
-    );
-}
+const AppNavLinks = () => {
+  return (
+    <Router>
+      <AppNavBar />
+      <Switch>
+        <Route exact path="/" component={Dashboard} />
+        <Route exact path="/graph" component={Graph} />
+      </Switch>
+    </Router>
+  );
+};
+
+export default AppNavLinks;
