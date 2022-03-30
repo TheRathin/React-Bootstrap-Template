@@ -1,8 +1,8 @@
 import React from "react";
-import List from "@material-ui/core/List";
-import DashboardIcon from "@material-ui/icons/Dashboard";
-import InsertChart from "@material-ui/icons/InsertChart";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import List from "@mui/material/List";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import InsertChart from "@mui/icons-material/InsertChart";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import {
   IconButton,
   Drawer,
@@ -10,7 +10,7 @@ import {
   ListItem,
   ListItemText,
   Divider,
-} from "@material-ui/core";
+} from "@mui/material";
 import { Link } from "react-router-dom";
 //Stylesheet Importing
 import "../styles/AppNavBarDrawer.css";

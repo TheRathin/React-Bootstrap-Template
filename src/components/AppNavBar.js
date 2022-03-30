@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Toolbar from "@material-ui/core/Toolbar";
-import MenuIcon from "@material-ui/icons/Menu";
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import { IconButton, Typography, AppBar } from "@material-ui/core";
+import Toolbar from "@mui/material/Toolbar";
+import MenuIcon from "@mui/icons-material/Menu";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import { IconButton, Typography, AppBar } from "@mui/material";
 
 import AppNavBarDrawer from "./AppNavBarDrawer";
 

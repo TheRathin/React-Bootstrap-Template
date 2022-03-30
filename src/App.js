@@ -1,10 +1,10 @@
 //import modules
 import React, { Component } from 'react';
-import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import NavLinks from './components/NavLinks';
 
 //A small piece of code to customize your theme
-const theme = createMuiTheme({
+const theme = createTheme({
   palette:{
     primary: {
       light: '#FFFFFF',
@@ -21,9 +21,9 @@ const theme = createMuiTheme({
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
         <NavLinks/>
-      </MuiThemeProvider>
+      </ThemeProvider>
     );
   }
 }
