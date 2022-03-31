@@ -3,10 +3,12 @@ No need to write the code from scratch, just download this repository and npm in
 This starter template includes:
 
  1. React.js
- 2. Material UI
+ 2. Material UI (v5)
  3. Reactstrap + Bootstrap
  4. React Router
  5. A page + drawer
+ 6. Redux
+ 7. Thunk
  
  Directory Structure of src folder:
   
