@@ -1,51 +1,52 @@
-import React from "react";
-import List from "@mui/material/List";
-import DashboardIcon from "@mui/icons-material/Dashboard";
-import InsertChart from "@mui/icons-material/InsertChart";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import React from 'react'
+import List from '@mui/material/List'
+import DashboardIcon from '@mui/icons-material/Dashboard'
+import InsertChart from '@mui/icons-material/InsertChart'
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import {
   IconButton,
   Drawer,
   ListItemIcon,
   ListItem,
   ListItemText,
-  Divider,
-} from "@mui/material";
-import { Link } from "react-router-dom";
-//Stylesheet Importing
-import "../styles/AppNavBarDrawer.css";
+  Divider
+} from '@mui/material'
+import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
+// Stylesheet Importing
+import '../styles/AppNavBarDrawer.css'
 
 const menuItemsList = [
   {
-    link: "/",
-    text: "Dashboard",
-    iconType: <DashboardIcon />,
+    link: '/',
+    text: 'Dashboard',
+    iconType: <DashboardIcon />
   },
   {
-    link: "/graph",
-    text: "Graph",
-    iconType: <InsertChart />,
-  },
-];
+    link: '/graph',
+    text: 'Graph',
+    iconType: <InsertChart />
+  }
+]
 
-//Listiem itself can be broken down to small pieces
+// Listiem itself can be broken down to small pieces
 const MenuItemList = ({ itemListData, closeDrawer }) => {
   return (
     <List>
-      {itemListData.map((el) => (
-        <ListItem button component={Link} to={el.link} onClick={closeDrawer}>
+      {itemListData.map((el, index) => (
+        <ListItem button key={index} component={Link} to={el.link} onClick={closeDrawer}>
           <ListItemIcon>{el.iconType}</ListItemIcon>
           <ListItemText primary={el.text} />
         </ListItem>
       ))}
     </List>
-  );
-};
+  )
+}
 
 const AppNavBarDrawer = ({ drawerState, changeDrawerAction }) => {
   return (
-    <Drawer className="drawer" variant="persistent" open={drawerState}>
-      <div className="drawerHeader">
+    <Drawer className='drawer' variant='persistent' open={drawerState}>
+      <div className='drawerHeader'>
         <IconButton onClick={changeDrawerAction}>
           <ChevronLeftIcon />
         </IconButton>
@@ -56,7 +57,16 @@ const AppNavBarDrawer = ({ drawerState, changeDrawerAction }) => {
         closeDrawer={changeDrawerAction}
       />
     </Drawer>
-  );
-};
+  )
+}
 
-export default AppNavBarDrawer;
+MenuItemList.propTypes = {
+  itemListData: PropTypes.array,
+  closeDrawer: PropTypes.func
+}
+
+AppNavBarDrawer.propTypes = {
+  drawerState: PropTypes.bool,
+  changeDrawerAction: PropTypes.func
+}
+export default AppNavBarDrawer
