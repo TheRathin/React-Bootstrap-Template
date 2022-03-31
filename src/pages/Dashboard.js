@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { Container, Row, Col } from "reactstrap";
+import React from 'react'
+import { Container, Row, Col } from 'reactstrap'
 
 const styles = {
   root: {
-    marginTop: 30,
-  },
-};
+    marginTop: 30
+  }
+}
 
 const Dashboard = () => {
   return (
@@ -18,7 +18,7 @@ const Dashboard = () => {
         </Row>
       </Container>
     </div>
-  );
-};
+  )
+}
 
-export default Dashboard;
+export default Dashboard
