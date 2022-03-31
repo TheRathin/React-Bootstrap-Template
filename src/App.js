@@ -1,11 +1,14 @@
-//import modules
-import React, { Component } from 'react';
-import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
-import NavLinks from './components/NavLinks';
+// import modules
+import React, { Component } from 'react'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+import NavLinks from './components/NavLinks'
+// redux
+import { Provider } from 'react-redux'
+import { AppStore } from './redux/store'
 
-//A small piece of code to customize your theme
-const theme = createMuiTheme({
-  palette:{
+// A small piece of code to customize your theme
+const theme = createTheme({
+  palette: {
     primary: {
       light: '#FFFFFF',
       main: '#FFFFFF',
@@ -13,19 +16,21 @@ const theme = createMuiTheme({
       contrastText: '#fff'
     },
     secondary: {
-      main: '#4527A0',
+      main: '#4527A0'
     }
   }
-});
+})
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <MuiThemeProvider theme={theme}>
-        <NavLinks/>
-      </MuiThemeProvider>
-    );
+      <ThemeProvider theme={theme}>
+        <Provider store={AppStore}>
+          <NavLinks />
+        </Provider>
+      </ThemeProvider>
+    )
   }
 }
 
-export default App;
+export default App
